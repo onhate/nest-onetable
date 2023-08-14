@@ -1,8 +1,7 @@
 import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { Injectable } from '@nestjs/common';
 import { Test } from '@nestjs/testing';
-import { OneModel } from './decorators';
-import { OnetableModule } from './module';
+import { OneModel, OnetableModule } from './index';
 
 @Injectable()
 export class OneModelX extends OneModel('OneModelX', {
