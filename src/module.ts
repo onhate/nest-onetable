@@ -4,7 +4,7 @@ import type { TableConstructorParams } from 'dynamodb-onetable/dist/cjs/Table';
 import { paramsSymbol, tableSymbol } from './decorators';
 
 type TableParamsProvider = Omit<FactoryProvider<TableConstructorParams<any>>, 'provide'> | TableConstructorParams<any>;
-type OnetableModuleOptions = TableParamsProvider & {
+export type OnetableModuleOptions = TableParamsProvider & {
   global?: boolean;
 };
 
