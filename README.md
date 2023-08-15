@@ -25,7 +25,7 @@ To start using the Nest-Onetable library in your NestJS project, follow these st
 npm install nest-onetable
 ```
 
-    or
+or
 
 ```bash
 yarn add nest-onetable
