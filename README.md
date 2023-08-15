@@ -1,4 +1,4 @@
-# `nest-onetable`
+# @OneTable
 
 Welcome to the **Nest-Onetable** library! This library provides a convenient way to integrate the power
 of [DynamoDB OneTable](https://github.com/sensedeep/dynamodb-onetable) with [NestJS](https://nestjs.com/) applications.
