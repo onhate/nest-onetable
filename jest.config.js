@@ -1,4 +1,5 @@
 module.exports = {
+  preset: '@shelf/jest-dynamodb',
   testEnvironment: 'node',
   restoreMocks: true,
   clearMocks: true,
