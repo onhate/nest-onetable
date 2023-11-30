@@ -7,12 +7,11 @@ export const tableSymbol = Symbol('OneTable:Table');
 
 export const OneTable = () => Inject(tableSymbol);
 
-export function OneModel<T extends OneTableOneModel>(name: string, fields: T, timestamps?: boolean | string) {
-  class OneTableModel extends Model<Entity<typeof fields>> {
-    public readonly fields: T;
+export function OneModel<T extends OneTableOneModel, M = Entity<T>>(name: string, fields: T, timestamps?: boolean | string) {
+  class OneTableModel extends Model<M> {
+    public static readonly fields: T = fields;
     constructor(@OneTable() table: Table) {
       super(table, name, { fields, timestamps });
-      this.fields = fields;
     }
   }
 
